@@ -1,0 +1,283 @@
+*{
+    background-color: black;
+}
+body{
+    margin-left: 0px;
+}
+.btn-1{
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 6px;
+    padding-bottom: 7px;
+    position: relative;
+    bottom: 720px;
+    left: 1280px;
+}
+.btn-1:hover{
+    background-color: rgb(235, 132, 132);
+    transform: scale(1.05);
+}
+.btn-2{
+    background-color: red;
+    color: white;
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    border-radius: 5px;
+    position: relative;
+    bottom: 250px;
+    left: 530px;
+    font-size: 20px;
+}
+.btn-2:hover{
+    background-color: rgb(235, 132, 132);
+    transform: scale(1.05);
+}
+.trending{
+    margin-left: 40px;
+    margin-top: 0px;
+    font-size: 30px;
+    color: white;
+    
+}
+#select{
+    padding: 10px;
+    color: white;
+}
+#select2{
+    padding: 10px;
+    margin-left: 10px;
+    color: white;
+}
+.content{
+    margin-left: 150px;
+}
+.reasons{
+    margin-left: 150px;
+    margin-top: 60px;
+}
+.ques{
+    margin-left: 150px;
+    margin-top: 60px;
+}
+.last{
+    text-align: center;
+    color: white;
+    font-size: 30px;
+}
+.search{
+    margin-left: 400px;
+    background-color: rgb(2, 2, 33);
+    padding: 10px;
+    padding-right: 400px;
+    border-radius: 6px;
+    border-color: black;
+    box-shadow: 20px white;
+
+}
+.search-btn{
+    color: white;
+    padding: 8px;
+    padding-bottom: 10px;
+    border-radius: 6px;
+    background-color: red;
+    font-size: 20px;
+}
+.footer{
+    margin-top: 40px;
+    margin-left: 40px;
+}
+@media (Max-width : 1200px) {
+    *{
+        background-color: black;
+    }
+    body{
+        margin-left: 0px;
+    }
+    .btn-1{
+        background-color: red;
+        color: white;
+        border-radius: 5px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 6px;
+        padding-bottom: 7px;
+        position: relative;
+        bottom: 720px;
+        left: 1280px;
+    }
+    .btn-1:hover{
+        background-color: rgb(235, 132, 132);
+        transform: scale(1.05);
+    }
+    .btn-2{
+        background-color: red;
+        color: white;
+        padding-left: 70px;
+        padding-right: 70px;
+        padding-bottom: 20px;
+        padding-top: 20px;
+        border-radius: 5px;
+        position: relative;
+        bottom: 250px;
+        left: 530px;
+        font-size: 20px;
+    }
+    .btn-2:hover{
+        background-color: rgb(235, 132, 132);
+        transform: scale(1.05);
+    }
+    .trending{
+        margin-left: 40px;
+        margin-top: 0px;
+        font-size: 30px;
+        color: white;
+        
+    }
+    #select{
+        padding: 10px;
+        color: white;
+    }
+    #select2{
+        padding: 10px;
+        margin-left: 10px;
+        color: white;
+    }
+    .content{
+        margin-left: 150px;
+    }
+    .reasons{
+        margin-left: 150px;
+        margin-top: 60px;
+    }
+    .ques{
+        margin-left: 150px;
+        margin-top: 60px;
+    }
+    .last{
+        text-align: center;
+        color: white;
+        font-size: 30px;
+    }
+    .search{
+        margin-left: 400px;
+        background-color: rgb(2, 2, 33);
+        padding: 10px;
+        padding-right: 400px;
+        border-radius: 6px;
+        border-color: black;
+        box-shadow: 20px white;
+    
+    }
+    .search-btn{
+        color: white;
+        padding: 8px;
+        padding-bottom: 10px;
+        border-radius: 6px;
+        background-color: red;
+        font-size: 20px;
+    }
+    .footer{
+        margin-top: 40px;
+        margin-left: 40px;
+    }
+}
+@media (min-width: 250px){
+    *{
+        background-color: black;
+    }
+    body{
+        margin-left: 0px;
+    }
+    .btn-1{
+        background-color: red;
+        color: white;
+        border-radius: 5px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 6px;
+        padding-bottom: 7px;
+        position: relative;
+        bottom: 720px;
+        left: 1280px;
+    }
+    .btn-1:hover{
+        background-color: rgb(235, 132, 132);
+        transform: scale(1.05);
+    }
+    .btn-2{
+        background-color: red;
+        color: white;
+        padding-left: 70px;
+        padding-right: 70px;
+        padding-bottom: 20px;
+        padding-top: 20px;
+        border-radius: 5px;
+        position: relative;
+        bottom: 250px;
+        left: 530px;
+        font-size: 20px;
+    }
+    .btn-2:hover{
+        background-color: rgb(235, 132, 132);
+        transform: scale(1.05);
+    }
+    .trending{
+        margin-left: 40px;
+        margin-top: 0px;
+        font-size: 30px;
+        color: white;
+        
+    }
+    #select{
+        padding: 10px;
+        color: white;
+    }
+    #select2{
+        padding: 10px;
+        margin-left: 10px;
+        color: white;
+    }
+    .content{
+        margin-left: 150px;
+    }
+    .reasons{
+        margin-left: 150px;
+        margin-top: 60px;
+    }
+    .ques{
+        margin-left: 150px;
+        margin-top: 60px;
+    }
+    .last{
+        text-align: center;
+        color: white;
+        font-size: 30px;
+    }
+    .search{
+        margin-left: 400px;
+        background-color: rgb(2, 2, 33);
+        padding: 10px;
+        padding-right: 400px;
+        border-radius: 6px;
+        border-color: black;
+        box-shadow: 20px white;
+    
+    }
+    .search-btn{
+        color: white;
+        padding: 8px;
+        padding-bottom: 10px;
+        border-radius: 6px;
+        background-color: red;
+        font-size: 20px;
+    }
+    .footer{
+        margin-top: 40px;
+        margin-left: 40px;
+    }
+}
