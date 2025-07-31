@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix - Watch TV Shows Online, Watch Movies Online</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        }
+        
+        body {
+            background-color: #000;
+            color: #fff;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .header {
+            padding: 20px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            height: 45px;
+        }
+        
+        .login-container {
+            background-color: rgba(0, 0, 0, 0.75);
+            border-radius: 4px;
+            width: 100%;
+            max-width: 450px;
+            margin: 0 auto;
+            padding: 60px 68px 40px;
+            margin-bottom: 90px;
+        }
+        
+        .login-title {
+            color: #fff;
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 28px;
+        }
+        
+        .input-group {
+            position: relative;
+            margin-bottom: 16px;
+        }
+        
+        .input-field {
+            width: 100%;
+            height: 50px;
+            background: #333;
+            border: none;
+            border-radius: 4px;
+            color: #fff;
+            font-size: 16px;
+            padding: 16px 20px 0;
+        }
+        
+        .input-label {
+            position: absolute;
+            top: 50%;
+            left: 20px;
+            transform: translateY(-50%);
+            color: #8c8c8c;
+            font-size: 16px;
+            transition: all 0.2s ease;
+        }
+        
+        .input-field:focus + .input-label,
+        .input-field:not(:placeholder-shown) + .input-label {
+            font-size: 11px;
+            top: 7px;
+            transform: translateY(0);
+        }
+        
+        .login-button {
+            width: 100%;
+            height: 50px;
+            background: #e50914;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            font-weight: 700;
+            margin: 24px 0 12px;
+            cursor: pointer;
+        }
+        
+        .login-button:hover {
+            background: #f40612;
+        }
+        
+        .remember-help {
+            display: flex;
+            justify-content: space-between;
+            color: #b3b3b3;
+            font-size: 13px;
+            margin-bottom: 16px;
+        }
+        
+        .remember-me {
+            display: flex;
+            align-items: center;
+        }
+        
+        .checkbox {
+            margin-right: 5px;
+        }
+        
+        .help-link {
+            color: #b3b3b3;
+            text-decoration: none;
+        }
+        
+        .help-link:hover {
+            text-decoration: underline;
+        }
+        
+        .signup-text {
+            color: #737373;
+            font-size: 16px;
+            margin-top: 16px;
+        }
+        
+        .signup-link {
+            color: #fff;
+            text-decoration: none;
+        }
+        
+        .signup-link:hover {
+            text-decoration: underline;
+        }
+        
+        .footer {
+            background-color: rgba(0, 0, 0, 0.75);
+            padding: 20px 50px;
+            margin-top: auto;
+        }
+        
+        .footer-content {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        
+        .footer-top {
+            margin-bottom: 30px;
+        }
+        
+        .footer-link {
+            color: #737373;
+            text-decoration: none;
+            font-size: 13px;
+            margin-right: 15px;
+        }
+        
+        .footer-link:hover {
+            text-decoration: underline;
+        }
+        
+        .error-message {
+            color: #e87c03;
+            font-size: 13px;
+            margin-bottom: 16px;
+            display: none;
+        }
+        
+        @media (max-width: 740px) {
+            .login-container {
+                padding: 15px;
+                margin-top: 0;
+                background-color: #000;
+            }
+            
+            .header {
+                padding: 15px;
+            }
+            
+            .logo {
+                height: 32px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg" alt="Netflix Logo" class="logo">
+    </header>
+    
+    <main>
+        <div class="login-container">
+            <h1 class="login-title">Sign In</h1>
+            <div class="error-message" id="errorMessage">Incorrect username or password. Please try again.</div>
+            <form id="loginForm">
+                <div class="input-group">
+                    <input type="text" class="input-field" id="username" placeholder=" " required>
+                    <label for="username" class="input-label">Username</label>
+                </div>
+                <div class="input-group">
+                    <input type="password" class="input-field" id="password" placeholder=" " required>
+                    <label for="password" class="input-label">Password</label>
+                </div>
+                <button type="submit" class="login-button">Sign In</button>
+                <div class="remember-help">
+                    <div class="remember-me">
+                        <input type="checkbox" class="checkbox" id="remember">
+                        <label for="remember">Remember me</label>
+                    </div>
+                    <a href="#" class="help-link">Need help?</a>
+                </div>
+            </form>
+            <p class="signup-text">New to Netflix? <a href="#" class="signup-link">Sign up now</a>.</p>
+        </div>
+    </main>
+    
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-top">
+                <p>Questions? Call 1-866-579-7172</p>
+            </div>
+            <div class="footer-links">
+                <a href="#" class="footer-link">FAQ</a>
+                <a href="#" class="footer-link">Help Center</a>
+                <a href="#" class="footer-link">Terms of Use</a>
+                <a href="#" class="footer-link">Privacy</a>
+                <a href="#" class="footer-link">Cookie Preferences</a>
+                <a href="#" class="footer-link">Corporate Information</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+            const errorMessage = document.getElementById('errorMessage');
+            
+            if (username === 'ahmedali' && password === 'admin123') {
+                // Redirect to index.html on successful login
+                window.location.href = 'netflix.html';
+            } else {
+                // Show error message
+                errorMessage.style.display = 'block';
+            }
+        });
+    </script>
+</body>
+</html>
